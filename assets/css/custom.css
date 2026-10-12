@@ -1,7 +1,74 @@
+/* Shared look with the project docs (e.g. ark.mlange.dev) */
+
+/* font */
+html {
+  font-family: "Roboto Flex", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* general background color */
+body {
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+body:is(html[class~="dark"] *) {
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+}
+
+.hx-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+}
+
+.dark\:hx-bg-dark:is(html[class~="dark"] *) {
+  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
+  box-shadow: none;
+}
+
+/* navigation bar */
+.hextra-scrollbar a {
+  overflow: hidden;
+  word-break: keep-all;
+  white-space: nowrap;
+  font-size: 100%;
+  font-weight: 300;
+  font-stretch: 112.5%;
+}
+
+.hx-font-medium {
+  font-weight: 300;
+  font-stretch: 112.5%;
+}
+
+/* hero */
+h1.hx-font-bold {
+  font-weight: 200;
+  font-stretch: 120%;
+}
+
+.hx-text-xl {
+  font-weight: 200;
+  font-stretch: 112.5%;
+}
+
+/* projects */
 .projects-heading {
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
+  font-stretch: 120%;
   margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-weight: 400;
+  font-stretch: 120%;
+}
+
+.project-card p {
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: 112.5%;
 }
 
 .project-links {
@@ -12,24 +79,31 @@
   margin-top: auto;
   padding-top: 1rem;
   font-size: 0.875rem;
+  font-stretch: 112.5%;
 }
 
 .project-links a {
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
-  font-weight: 500;
-  color: hsl(var(--primary-hue) var(--primary-saturation) 45%);
+  font-weight: 400;
+  color: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 45));
 }
 
 .project-links a:hover {
   text-decoration: underline;
 }
 
-.dark .project-links a {
-  color: hsl(var(--primary-hue) var(--primary-saturation) 65%);
+html.dark .project-links a {
+  color: hsl(var(--primary-hue) var(--primary-saturation) calc(calc(var(--primary-lightness) / 50) * 60));
 }
 
 .project-language {
   color: rgb(107 114 128);
+}
+
+/* navbar title */
+nav .hx-font-extrabold {
+  font-weight: 400;
+  font-stretch: 120%;
 }
