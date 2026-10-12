@@ -1,0 +1,44 @@
+# Projects shown on the landing page, in display order.
+# `links` are optional extra links (docs, website, ...) shown next to the repository link.
+
+- name: Ark
+  description: Archetype-based Entity Component System (ECS) for Go.
+  language: Go
+  repo: https://github.com/mlange-42/ark
+  links:
+    - name: Docs
+      url: https://ark.mlange.dev
+
+- name: Ark.jl
+  description: Archetype-based Entity Component System (ECS) for Julia.
+  language: Julia
+  repo: https://github.com/ark-ecs/Ark.jl
+  links:
+    - name: Docs
+      url: https://ark-ecs.github.io/Ark.jl/stable/
+
+- name: Modo
+  description: DocGen for Mojo.
+  language: Go
+  repo: https://github.com/mlange-42/modo
+  links:
+    - name: Docs
+      url: https://mlange-42.github.io/modo/
+
+- name: git-graph
+  description: Command line tool to show clear git graphs arranged for your branching model.
+  language: Rust
+  repo: https://github.com/git-bahn/git-graph
+
+- name: git-igitt
+  description: Interactive, cross-platform Git terminal application with clear git graphs arranged for your branching model.
+  language: Rust
+  repo: https://github.com/git-bahn/git-igitt
+
+- name: Tiny World
+  description: A tiny, slow-paced world and colony building game.
+  language: Go
+  repo: https://github.com/mlange-42/tiny-world
+  links:
+    - name: Play
+      url: https://mlange-42.itch.io/tiny-world

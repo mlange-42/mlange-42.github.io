@@ -1,0 +1,34 @@
+baseURL: https://mlange.dev/
+languageCode: en-us
+title: Martin Lange
+description: Martin Lange, research software engineer. Projects and documentation.
+
+module:
+  imports:
+    path: github.com/imfing/hextra
+
+menu:
+  main:
+    - name: GitHub
+      weight: 1
+      url: "https://github.com/mlange-42"
+      params:
+        icon: github
+
+params:
+  theme:
+    default: system
+    displayToggle: true
+  footer:
+    displayPoweredBy: false
+    displayCopyright: false
+  search:
+    enable: false
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
